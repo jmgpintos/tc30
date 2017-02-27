@@ -1,0 +1,74 @@
+
+                <div class="form-group ">
+                    <label for="nombre" class="control-label col-md-3">Nombre y apellidos</label>
+                    <div class="col-md-9">
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-user"></span>
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" value="{$datos.nombre|default:''}">
+                            <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos" value="{$datos.apellidos|default:''}">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label for="fechaNac" class="control-label col-md-3">Fecha de Nacimiento</label>
+                    <div class="col-md-9">
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-calendar"></span>
+                            <input type="date" class="form-control" name="fechaNac" id="fechaNac" placeholder="Fecha de nacimiento" value="{$datos.fechaNac|default:''}">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label for="telefono" class="control-label col-md-3">Teléfono</label>
+                    <div class="col-md-9">
+                        <div class="input-group">
+                            <span class="input-group-addon glyphicon glyphicon-phone"></span>
+                            <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Teléfono" value="{$datos.telefono|default:''}">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group ">
+                    <label for="sexo" class="control-label col-md-3">Sexo</label>
+                    {if isset($datos.sexo)}
+                        <div class="col-md-4">
+                            <div class="input-group form-inline">
+                                <label class ="radio-inline control-label">
+                                    <input type="radio" name="sexo" value="H" 
+                                           {if $datos.sexo=='H'}
+                                               checked
+                                           {/if}
+                                           />
+                                    Hombre
+                                </label>
+                                <label class ="radio-inline control-label">
+                                    <input type="radio" name="sexo" value="M"
+                                           {if $datos.sexo=='M'}
+                                               checked
+                                           {/if}
+                                           />
+                                    Mujer
+                                </label>
+                            </div>
+                        </div>
+                    {/if}
+                    {*                </div>*}
+                    {*                <div class="form-group text-right">*}
+                    <div class="col-md-5 text-right">
+                        <input type="checkbox" name="discapacidad" id="discapacidad" autocomplete="off"
+                               {if isset($datos.discapacidad) && $datos.discapacidad==1}
+                                   checked
+                               {/if}
+                               />
+                        <div class="btn-group">
+                            <label for="discapacidad" class="btn btn-primary">
+                                <span class="glyphicon glyphicon-ok"></span>
+                                <span> </span>
+                            </label>
+                            <label for="discapacidad" class="btn btn-default active">
+                                Discapacitado
+                            </label>
+                        </div>
+                    </div>
+
+
+                </div>

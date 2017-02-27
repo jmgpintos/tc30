@@ -1,0 +1,379 @@
+/**********FOOTER*****************/
+#pie{
+    /*margin: 0 auto;*/
+    /*width: 1020px;*/
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    /*background-color: #434343;*/
+    border-top:3px solid black;
+    padding-top: 5px;
+    height: 160px;
+   z-index:1000;
+}
+
+#pie #contenedor{
+    /*margin:auto;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*text-align: left;*/
+}
+
+#pie #contenedor p {
+    /* float: left; */
+    font-size: 14px;
+    /*color: #ffffff;*/
+}
+#pie a {
+    /*color: #ffffff;*/
+    text-decoration: none;
+    transition-duration: .5s;
+}
+#pie #contenedor .columna{
+    border-right: 1px dotted #535353;
+}
+
+#pie #contenedor .columna:last-child{
+    border-right: none;
+}
+#pie #contenedor .columna p{
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;}
+
+#pie #contenedor .columna li{
+    font-size: 12px;
+}
+
+#pie a:hover{
+    color:#ec6728;
+    /*font-weight: bolder;*/
+    transition-duration: .5s;
+}
+
+#pie #contenedor .columna ul{
+    float: left;
+    margin-top: 10px;
+    list-style-type: none;}
+
+#pie #contenedor .columna li{
+    float: left;
+    padding-top:5px;
+    width: 250px;}
+
+#pie #contenedor .columna .redes{
+    /*float: left;*/
+    /*width: 220px;*/
+    text-align: center;
+    margin-top: 10px;
+} 
+
+#pie #contenedor .columna:nth-child(2),
+#pie #contenedor .columna:last-child{
+    /*font-family: 'Montserrat';*/
+}
+.redes img{
+    transition:all .8s;
+}
+.redes img:hover{
+    filter: invert(0.7);
+    -webkit-filter:invert(0.7);
+    -moz-filter: invert(0.7);
+    -ms-filter: invert(0.7);
+    -o-filter: invert(0.7);
+}
+
+/********************FIN FOOTER*********************/
+
+
+#version{
+    position: fixed;
+    bottom:60px;
+    right:10px;
+}
+.info-curso .info-alumno{
+    border-bottom: 5px solid white;
+}
+.label-as-badge {
+    border-radius: 1em;
+}
+.display-label {
+    font-weight: bold;
+    text-align: right;
+    padding-bottom: 10px;
+}
+.display-values {
+    color: darkgray;
+}
+
+#radioBtn .notActive{
+    color: #3276b1;
+    background-color: #fff;
+}
+
+button[disabled] {
+    cursor: not-allowed;
+}
+img.mapa{
+    width: 400px;
+    height: 300px;
+}
+.descripcion{
+    font-style: italic;
+    opacity: .8;
+    border-left: 15px solid rgba(127,127,127,.3);
+    margin-bottom: 15px;
+}
+
+.tabla-media{
+    width: 50%;
+    margin: auto;
+}
+/*FILE INPUTS*/
+.container{
+    margin-top:20px;
+}
+.image-preview-input {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;    
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;    
+}
+.image-preview-input input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
+
+.btn-suave{
+    opacity: .5;
+    transition-property: opacity;
+    transition-duration: .5s;
+}
+.btn-suave:hover{
+    opacity: 1;
+}
+.borde-inferior{
+    border-bottom: thin solid #e3e3e3;
+    margin-bottom: 5px;
+}
+
+.borde-superior{
+    borde-top: thin solid #e3e3e3;
+    margin-top: 15px;
+}
+
+.glyphicon{
+    top:0; /*Para alinear los iconos y los inputs en los forms*/
+}
+
+/*checkboxes*/
+.form-group input[type="checkbox"] {
+    display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+    width: 20px;
+    height: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+    display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+    display: inline-block;   
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+    display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+    display: none;   
+}
+
+#template{
+    /*padding-top: 60px;*/
+    float: left;
+    width:100%;
+    margin-bottom:100px;
+}
+
+.navbar{
+    padding-right: 20px;
+}
+.navbar-brand{
+    font-size: 150%;
+}
+.navbar .label{
+    font-size: 100%;
+}
+.navbar-brand.label{
+    font-size: 150%;
+}
+.required:before{
+    content:"*";
+    vertical-align: super;
+}
+.error{
+    display: block;
+    font-size: 85%;
+    font-weight: normal;
+}
+/*
+* Equis para cerrar ventana de login
+*/
+.close-login{
+    opacity: .5;
+    color: #02a5de;
+}
+.close-login:hover{
+    color: #02a5de;
+    opacity: 1;
+}
+.page-header{
+    margin-top: 80px;
+    margin-bottom: 15px;
+}
+.page-header>h1{
+    margin-top: 80px;
+}
+.page-header>h1>hr{
+    margin:5px 0;
+}
+/*
+* Centrar verticalmente titulos de tabla (por si hay botones)
+*/
+.table>thead>tr>th,
+.table>tbody>tr>td{
+    vertical-align: middle;
+}
+.table{
+    margin-bottom: 0px;
+}
+.pagination{
+    margin: 5px 0;
+}
+ul.pagination li a{
+    height: 32px;
+    vertical-align: middle;
+}
+ul.pagination li a span.glyphicon{
+    top:2px;
+}
+.pagination-well{
+    margin-top: 5px;
+}
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 80px;
+}
+.footer {
+    border-top: 5px solid yellowgreen;
+    overflow-y: scroll;
+    word-break: keep-all;
+    z-index: 999;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    /* Set the fix height of the footer here */
+    height: 55px;
+    /*    padding: 5px 0;*/
+    /*border-top: 2px solid yellowgreen;*/
+}
+
+.footer ul{
+    text-align: center;
+}
+.footer ul li{
+    display: inline;
+    list-style-type: none;
+    /*    background: #000;*/
+    padding: 15px;
+    margin-right:1px;
+}
+.footer h4{
+    margin: 0;   display: inline;
+}
+
+@media(max-width: 479px){
+    body{
+        margin-bottom: 180px;
+    }
+    .footer{
+        padding: 5px;
+        height: auto;
+        border-top: 5px solid rgba(0,0,0,.5);
+    }
+    .footer ul{
+        margin: 0;
+    }
+    .footer ul li{
+        display: block;
+        padding: 2px;
+    }
+    .footer h4{    
+        margin: 1px 0;
+    }
+}
+
+
+/*
+* Botones circulares
+*/
+.btn-round {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 5px;
+    border-color: rgba(0,0,0,0);
+    opacity: .5;
+    transition-property: opacity;
+    transition-duration: .5s;
+}
+.btn-round:hover{
+    opacity: 1;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 10px;
+}
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+}
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+}

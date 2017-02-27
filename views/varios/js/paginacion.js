@@ -1,0 +1,1 @@
+$('.pagination').parent().addClass('tabla-media');
